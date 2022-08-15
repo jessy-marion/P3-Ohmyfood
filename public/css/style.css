@@ -1,0 +1,13 @@
+/*lighten primary ne pas oublier !*/
+/*darken tertiary ne pas oublier !*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+/*# sourceMappingURL=style.css.map */
