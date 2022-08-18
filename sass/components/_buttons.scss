@@ -1,0 +1,11 @@
+.btn {
+    margin: 2rem 0 4rem 0;
+    height: 50px;
+    width: 230px;
+    @include center;
+    background: $color-gradient;
+    color: $wt;
+    border-radius: 25px;
+    font-size: $norm-font;
+    cursor: pointer;
+}

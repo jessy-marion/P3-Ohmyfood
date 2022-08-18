@@ -4,8 +4,15 @@
     justify-content: center;
 }
 
-@mixin center2 {
-    margin: auto;
+@mixin cent-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin marg-cen {
+    margin: 0 auto;
 }
 
 @mixin card {}
