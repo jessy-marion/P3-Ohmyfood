@@ -1,0 +1,13 @@
+header {
+    height: 10vh;
+    /*Repaire visu*/
+    background: red;
+    /*Repaire visu*/
+    @include center;
+
+
+    img {
+        margin-top: 1rem;
+        width: 225px;
+    }
+}
