@@ -1,6 +1,6 @@
 /*lighten primary ne pas oublier !*/
 /*darken tertiary ne pas oublier !*/
-.helper .step p, .entry__details p, .entry__location, .card p, .card h3 {
+footer, .helper .step p, .entry__details p, .entry__location, .card p, .card h3 {
   font-size: 1rem;
 }
 
@@ -18,6 +18,15 @@
 body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
 }
 
 .btn {
@@ -169,6 +178,24 @@ main {
 }
 .restaurants h2 {
   margin-bottom: 2rem;
+}
+
+footer {
+  background: #353535;
+  padding: 1.5rem;
+}
+footer img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(183deg) brightness(108%) contrast(103%);
+  height: 20px;
+  width: 90px;
+  margin-bottom: 0.6rem;
+}
+footer li {
+  margin-bottom: 0.4rem;
+}
+footer li i {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
