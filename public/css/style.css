@@ -1,10 +1,10 @@
 /*lighten primary ne pas oublier !*/
 /*darken tertiary ne pas oublier !*/
-.helper .step p, .entry__details p, .entry__location {
+.helper .step p, .entry__details p, .entry__location, .card p, .card h3 {
   font-size: 1rem;
 }
 
-.helper h2, .entry__details h1 {
+.restaurants h2, .helper h2, .entry__details h1 {
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -32,6 +32,41 @@ body {
   border-radius: 25px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.card {
+  display: grid;
+  margin: 1rem 0;
+  height: 250px;
+  width: 100%;
+  border-radius: 25px;
+  background: white;
+  grid-template-columns: 1fr 1fr 50px;
+  grid-template-rows: 1fr 1fr 1fr 30px 30px;
+  grid-template-areas: "img img img" "img img img" "img img img" "name name icon" "location location icon";
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  grid-area: img;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.card h3 {
+  grid-area: name;
+  align-self: end;
+  padding-left: 1rem;
+  margin: 0 0 0.2rem 0;
+}
+.card p {
+  grid-area: location;
+  padding-left: 1rem;
+}
+.card i {
+  grid-area: icon;
+  font-size: 1.5rem;
+  align-self: center;
 }
 
 header {
@@ -126,6 +161,14 @@ main {
 }
 .helper .step:hover i {
   color: #9356DC;
+}
+
+.restaurants {
+  padding: 2.5rem 1.5rem;
+  background: #F6F6F6;
+}
+.restaurants h2 {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

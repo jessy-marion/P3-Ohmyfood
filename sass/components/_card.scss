@@ -1,0 +1,46 @@
+.card {
+    display: grid;
+    margin: 1rem 0;
+    height: 250px;
+    width: 100%;
+    border-radius: 25px;
+    background: $wt;
+    grid-template-columns: 1fr 1fr 50px;
+    grid-template-rows: 1fr 1fr 1fr 30px 30px;
+    grid-template-areas: "img img img"
+        "img img img"
+        "img img img"
+        "name name icon"
+        "location location icon";
+
+    img {
+        height: 100%;
+        width: 100%;
+        grid-area: img;
+        object-fit: cover;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    h3 {
+        @extend %font;
+        grid-area: name;
+        align-self: end;
+        padding-left: 1rem;
+        margin: 0 0 0.2rem 0;
+    }
+
+    p {
+        @extend %font;
+        grid-area: location;
+        padding-left: 1rem;
+        // align-self: center;
+    }
+
+    i {
+        grid-area: icon;
+        font-size: 1.5rem;
+        align-self: center;
+
+    }
+}
