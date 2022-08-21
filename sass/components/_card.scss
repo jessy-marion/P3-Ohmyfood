@@ -5,6 +5,7 @@
     height: 250px;
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
     background: $wt;
@@ -15,6 +16,10 @@
         "img img img"
         "name name icon"
         "location location icon";
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 
     .new {
         position: absolute;
@@ -58,5 +63,51 @@
         font-size: 1.5rem;
         align-self: center;
 
+    }
+}
+
+
+.selection {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: $wt;
+    border-radius: 15px;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "name name"
+        "details price";
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+    h3 {
+        @extend %font;
+        grid-area: name;
+        // margin: 0.5rem 0;
+        align-self: center;
+
+    }
+
+    .details {
+        font-size: 0.8rem;
+        grid-area: details;
+        align-self: center;
+    }
+
+    .price {
+        margin-right: 1rem;
+        ;
+        grid-area: price;
+        align-self: end;
+        justify-self: end;
+        font-size: 0.8rem;
+        font-weight: bold;
     }
 }

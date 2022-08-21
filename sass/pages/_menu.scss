@@ -7,16 +7,12 @@
 
 .menu {
     padding: 1.5rem 1.5rem;
-    ;
     position: relative;
     bottom: 50px;
     /*Voir après si h1 et i en display inline block ça passe*/
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background: $light-gray;
-    // z-index: 1;
-
-
 
     .name {
 
@@ -42,6 +38,7 @@
 
 .menu-container {
     h2 {
+        margin: 2rem 0 0.3rem 0;
         @extend %font;
     }
 

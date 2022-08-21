@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*lighten primary ne pas oublier !*/
 /*darken tertiary ne pas oublier !*/
-footer, .menu-container h2, .helper .step p, .entry__details p, .entry__location, .card p, .card h3 {
+footer, .menu-container h2, .helper .step p, .entry__details p, .entry__location, .selection h3, .card p, .card h3 {
   font-size: 1rem;
 }
 
@@ -51,6 +51,9 @@ ul {
   font-size: 1rem;
   cursor: pointer;
 }
+.btn--centered {
+  margin: 3rem auto;
+}
 
 .card {
   position: relative;
@@ -59,12 +62,16 @@ ul {
   height: 250px;
   width: 100%;
   border-radius: 15px;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
   background: white;
   grid-template-columns: 1fr 1fr 50px;
   grid-template-rows: 1fr 1fr 1fr 30px 30px;
   grid-template-areas: "img img img" "img img img" "img img img" "name name icon" "location location icon";
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .card .new {
   position: absolute;
@@ -96,6 +103,41 @@ ul {
   grid-area: icon;
   font-size: 1.5rem;
   align-self: center;
+}
+
+.selection {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 15px;
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name name" "details price";
+}
+.selection:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.selection h3 {
+  grid-area: name;
+  align-self: center;
+}
+.selection .details {
+  font-size: 0.8rem;
+  grid-area: details;
+  align-self: center;
+}
+.selection .price {
+  margin-right: 1rem;
+  grid-area: price;
+  align-self: end;
+  justify-self: end;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 header {
@@ -239,6 +281,9 @@ main {
   font-size: 2rem;
 }
 
+.menu-container h2 {
+  margin: 2rem 0 0.3rem 0;
+}
 .menu-container .line {
   border-bottom: 3px solid #99E2D0;
   width: 40px;

@@ -8,4 +8,8 @@
     border-radius: 25px;
     font-size: $norm-font;
     cursor: pointer;
+
+    &--centered {
+        margin: 3rem auto;
+    }
 }
