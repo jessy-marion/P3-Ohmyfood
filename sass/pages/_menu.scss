@@ -1,0 +1,52 @@
+.bg-image {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    // z-index: 0;
+}
+
+.menu {
+    padding: 1.5rem 1.5rem;
+    ;
+    position: relative;
+    bottom: 50px;
+    /*Voir après si h1 et i en display inline block ça passe*/
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: $light-gray;
+    // z-index: 1;
+
+
+
+    .name {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        h1 {
+            margin: 1.5rem 0;
+            font-size: 2rem;
+            font-family: 'Shrikhand';
+            // font-weight: bolder;
+            // font-style: italic;
+            // letter-spacing: -5px;
+        }
+
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+.menu-container {
+    h2 {
+        @extend %font;
+    }
+
+    .line {
+        border-bottom: 3px solid $tertiary-color;
+        width: 40px
+    }
+}

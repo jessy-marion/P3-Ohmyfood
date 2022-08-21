@@ -1,4 +1,5 @@
 header {
+    position: relative;
     height: 10vh;
     /*Repaire visu*/
     // background: red;
@@ -10,5 +11,16 @@ header {
     img {
         margin-top: 1rem;
         width: 225px;
+    }
+
+    a {
+        position: absolute;
+        left: 35px;
+        top: 45px;
+
+        i {
+            font-size: 30px;
+            color: black
+        }
     }
 }

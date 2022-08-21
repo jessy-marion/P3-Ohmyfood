@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*lighten primary ne pas oublier !*/
 /*darken tertiary ne pas oublier !*/
-footer, .helper .step p, .entry__details p, .entry__location, .card p, .card h3 {
+footer, .menu-container h2, .helper .step p, .entry__details p, .entry__location, .card p, .card h3 {
   font-size: 1rem;
 }
 
@@ -29,6 +30,14 @@ ul {
   list-style: none;
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Shrikhand Regular"), url(../../assets/fonts/Shrikhand-Regular.woff) format("woff");
+  src: url(../../assets/fonts/Shrikhand-Regular.ttf) format("truetype");
+  src: url(../../assets/fonts/Shrikhand-Regular.otf) format("opentype");
+}
 .btn {
   margin: 2rem 0 4rem 0;
   height: 50px;
@@ -90,6 +99,7 @@ ul {
 }
 
 header {
+  position: relative;
   height: 10vh;
   /*Repaire visu*/
   /*Repaire visu*/
@@ -100,6 +110,15 @@ header {
 header img {
   margin-top: 1rem;
   width: 225px;
+}
+header a {
+  position: absolute;
+  left: 35px;
+  top: 45px;
+}
+header a i {
+  font-size: 30px;
+  color: black;
 }
 
 main {
@@ -189,6 +208,40 @@ main {
 }
 .restaurants h2 {
   margin-bottom: 2rem;
+}
+
+.bg-image {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  padding: 1.5rem 1.5rem;
+  position: relative;
+  bottom: 50px;
+  /*Voir après si h1 et i en display inline block ça passe*/
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: #F6F6F6;
+}
+.menu .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .name h1 {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  font-family: "Shrikhand";
+}
+.menu .name i {
+  font-size: 2rem;
+}
+
+.menu-container .line {
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
 }
 
 footer {
