@@ -44,23 +44,34 @@ ul {
 }
 
 .card {
+  position: relative;
   display: grid;
   margin: 1rem 0;
   height: 250px;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
   background: white;
   grid-template-columns: 1fr 1fr 50px;
   grid-template-rows: 1fr 1fr 1fr 30px 30px;
   grid-template-areas: "img img img" "img img img" "img img img" "name name icon" "location location icon";
+}
+.card .new {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #99E2D0;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #2ea084;
 }
 .card img {
   height: 100%;
   width: 100%;
   grid-area: img;
   object-fit: cover;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 .card h3 {
   grid-area: name;
@@ -108,7 +119,7 @@ main {
   justify-content: center;
 }
 .entry__location p {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .entry__details {
   padding: 0 2rem;
@@ -155,7 +166,7 @@ main {
   border-radius: 50%;
 }
 .helper .step i {
-  left: 2rem;
+  left: 2.4rem;
   position: absolute;
   font-size: 1rem;
   color: #7E7E7E;
