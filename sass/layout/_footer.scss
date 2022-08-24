@@ -3,6 +3,7 @@ footer {
     padding: 1.5rem;
     @extend %font;
 
+
     img {
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(183deg) brightness(108%) contrast(103%);
         height: 20px;
@@ -11,12 +12,19 @@ footer {
         ;
     }
 
+
+
     li {
         margin-bottom: 0.4rem;
+
 
         i {
             margin-right: 0.5rem;
             font-size: 0.8rem;
+        }
+
+        a {
+            color: $wt;
         }
     }
 }

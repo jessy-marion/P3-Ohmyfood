@@ -5,10 +5,14 @@
     // z-index: 0;
 }
 
-.menu {
-    padding: 1.5rem 1.5rem;
+.main {
     position: relative;
     bottom: 50px;
+}
+
+.menu {
+    padding: 1.5rem 1.5rem;
+
     /*Voir après si h1 et i en display inline block ça passe*/
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;

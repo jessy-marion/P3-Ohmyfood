@@ -5,11 +5,18 @@
     @include center;
     background: $color-gradient;
     color: $wt;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 25px;
     font-size: $norm-font;
     cursor: pointer;
 
     &--centered {
         margin: 3rem auto;
+
+    }
+
+    &:hover {
+        background: $btn-on;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
     }
 }

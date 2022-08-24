@@ -58,7 +58,8 @@
         // align-self: center;
     }
 
-    i {
+    // test ici
+    .like-btn {
         grid-area: icon;
         font-size: 1.5rem;
         align-self: center;
@@ -74,6 +75,7 @@
     border-radius: 15px;
     height: 80px;
     width: 100%;
+
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: grid;

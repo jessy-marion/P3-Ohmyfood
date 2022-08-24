@@ -11,6 +11,7 @@ $light-gray: #F6F6F6;
 $dark-gray: #7E7E7E;
 $matte-black: #353535;
 $color-gradient: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+$btn-on: linear-gradient(to top, lighten(#9356dc, 3), lighten(#b35cdc, 3), lighten(#cf64dc, 3), lighten(#e86edb, 3), lighten(#ff79da, 3));
 
 // shadows
 $head-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
