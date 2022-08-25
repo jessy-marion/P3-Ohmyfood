@@ -1,26 +1,43 @@
 header {
-    position: relative;
-    height: 10vh;
-    /*Repaire visu*/
-    // background: red;
-    /*Repaire visu*/
-    @include center;
-    // box-shadow: $head-shadow;
+    // position: relative;
+    // height: 10vh;
+    // /*Repaire visu*/
+    // // background: red;
+    // /*Repaire visu*/
+    // @include center;
+    // // box-shadow: $head-shadow;
 
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "back logo .";
 
     img {
-        margin-top: 1rem;
+        grid-area: logo;
+        align-self: center;
+        justify-self: center;
+        margin: 1rem;
         width: 225px;
     }
 
     a {
-        position: absolute;
-        left: 35px;
-        top: 45px;
+        grid-area: back;
+        align-self: center;
+        justify-self: center;
 
         i {
             font-size: 30px;
             color: black
         }
+    }
+
+    @media screen and (min-width: 992px) {
+        height: 10vh;
+
+        img {
+            height: 50px;
+            width: 250px;
+        }
+
     }
 }

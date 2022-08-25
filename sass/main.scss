@@ -3,10 +3,10 @@
 @import "./abstracts/mixins";
 @import "./base/reset";
 @import "./base/typography";
+@import "./base/animations";
+@import "./layout/header";
+@import "./layout/footer";
 @import "./components/buttons";
 @import "./components/card";
-@import "./layout/header";
 @import "./pages/home";
 @import "./pages/menu";
-@import "./layout/footer";
-@import "./base/animations";

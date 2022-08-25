@@ -111,3 +111,70 @@ main {
 
     }
 }
+
+@media screen and (min-width: 768px) {
+
+
+    .entry__details {
+        height: 500px;
+        display: flex;
+        color: $wt;
+        background: url(../../assets/bg/bg2.jpg) center center/cover;
+
+        h1 {
+            font-size: $bol-font-res;
+        }
+
+        p {
+            font-size: $norm-font-res;
+        }
+    }
+
+    .helper {
+        h2 {
+            font-size: $bol-font-res;
+        }
+
+        .step {
+            &__number {
+                font-size: 1rem;
+            }
+
+            i {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .restaurants {
+        h2 {
+            font-size: $bol-font-res;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .entry__details {
+        height: 83vh;
+        display: flex;
+        color: $wt;
+        background: url(../../assets/bg/bg2.jpg) center center/cover;
+    }
+
+    .helper {
+        .step {
+            width: 50%;
+            margin: 1.5rem auto;
+
+        }
+    }
+
+
+    .cards-container {
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

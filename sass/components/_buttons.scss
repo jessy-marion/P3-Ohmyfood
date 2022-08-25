@@ -19,4 +19,52 @@
         background: $btn-on;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
     }
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.1rem;
+
+    }
+
 }
+
+// like btn
+
+
+.like-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+
+
+    i {
+        // color: red;
+        // font-size: 3rem;
+        transition: color 0.2s ease-out, transform 0.3s ease-out;
+        // transform: scale(1);
+        // overflow: hidden;
+
+        &:hover {
+            transform: scale(1.5);
+            background: linear-gradient(to top, #9356dc, #ff79da);
+            /*???*/
+            -webkit-background-clip: text;
+            /*???*/
+            font-weight: bold;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+    }
+
+}
+
+// input[type="checkbox"]:checked~i {
+//     // color: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+//     
+
+// }

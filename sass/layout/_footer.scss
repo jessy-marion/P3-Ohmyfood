@@ -9,7 +9,6 @@ footer {
         height: 20px;
         width: 90px;
         margin-bottom: 0.6rem;
-        ;
     }
 
 
@@ -25,6 +24,13 @@ footer {
 
         a {
             color: $wt;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        img {
+            height: 30px;
+            width: 100px;
         }
     }
 }
