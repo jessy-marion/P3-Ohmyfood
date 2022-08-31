@@ -1,10 +1,9 @@
 //Palette
 
 $primary-color: #9356DC;
-/*lighten primary ne pas oublier !*/
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-/*darken tertiary ne pas oublier !*/
+
 $wt: white;
 $gray: #EAEAEA;
 $light-gray: #F6F6F6;
@@ -17,7 +16,6 @@ $btn-on: linear-gradient(to top, lighten(#9356dc, 3), lighten(#b35cdc, 3), light
 $head-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 // font
-
 $norm-font: 1rem;
 $bol-font: 1.4rem;
 

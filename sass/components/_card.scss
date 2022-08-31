@@ -38,8 +38,6 @@
         width: 100%;
         grid-area: img;
         object-fit: cover;
-        // border-top-left-radius: 25px;
-        // border-top-right-radius: 25px;
     }
 
     h3 {
@@ -54,11 +52,8 @@
         @extend %font;
         grid-area: location;
         padding-left: 1rem;
-
-        // align-self: center;
     }
 
-    // test ici
     .like-btn {
         grid-area: icon;
         font-size: 1.5rem;
@@ -84,58 +79,72 @@
 
     @media screen and (min-width: 992px) {
         margin: 1rem auto;
-        // align-self: center;
         height: 300px;
         width: 80%;
-        // width: calc(100% - 1.5rem);
-        // row-gap: 1.5rem;
-        // column-gap: 1.5rem;
     }
 }
 
 
 .selection {
+    display: flex;
     margin: 1rem 0;
-    padding: 1rem;
     background: $wt;
     border-radius: 15px;
-    height: 80px;
+    height: 70px;
     width: 100%;
     opacity: 0;
+    overflow: hidden;
 
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "name name"
-        "details price";
+
 
     &:hover {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
 
-    h3 {
-        @extend %font;
-        grid-area: name;
-        // margin: 0.5rem 0;
-        align-self: center;
+    .grid-selection {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "name name"
+            "details price";
 
+        h3 {
+            margin: 0.5rem 0 0 0.5rem;
+            @extend %font;
+            grid-area: name;
+            align-self: center;
+            margin-left: 0.5rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .details {
+            margin: 0 0 0.5rem 0.5rem;
+            font-size: 0.8rem;
+            grid-area: details;
+            align-self: center;
+            margin-left: 0.5rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+
+        }
+
+        .price {
+            margin: 0 0.5rem 0.5rem 0;
+            margin-right: 0.5rem;
+            grid-area: price;
+            align-self: center;
+            justify-self: end;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
     }
 
-    .details {
-        font-size: 0.8rem;
-        grid-area: details;
-        align-self: center;
-    }
-
-    .price {
-        margin-right: 1rem;
-        grid-area: price;
-        align-self: end;
-        justify-self: end;
-        font-size: 0.8rem;
-        font-weight: bold;
-    }
 }

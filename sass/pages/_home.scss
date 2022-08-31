@@ -58,8 +58,6 @@ main {
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-        // justify-content: center;
-
         &__number {
             font-size: 0.8rem;
             position: absolute;
@@ -75,7 +73,6 @@ main {
         }
 
         i {
-            // @include marg-cen;
             left: 2.4rem;
             position: absolute;
             font-size: 1rem;
@@ -83,8 +80,6 @@ main {
         }
 
         p {
-            // margin: auto;
-
             @include marg-cen;
             @extend %font;
             position: relative;
@@ -159,7 +154,7 @@ main {
         height: 83vh;
         display: flex;
         color: $wt;
-        background: url(../../assets/bg/bg2.jpg) center center/cover;
+        background: url(../../assets/bg/bg2.jpg) fixed center/cover;
     }
 
     .helper {

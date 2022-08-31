@@ -27,9 +27,6 @@
 
 }
 
-// like btn
-
-
 .like-btn {
     display: flex;
     align-items: center;
@@ -42,11 +39,7 @@
 
 
     i {
-        // color: red;
-        // font-size: 3rem;
         transition: color 0.2s ease-out, transform 0.3s ease-out;
-        // transform: scale(1);
-        // overflow: hidden;
 
         &:hover {
             transform: scale(1.5);
@@ -62,9 +55,3 @@
     }
 
 }
-
-// input[type="checkbox"]:checked~i {
-//     // color: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-//     
-
-// }

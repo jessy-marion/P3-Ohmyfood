@@ -9,7 +9,6 @@
     z-index: 1;
     margin-top: -50px;
     padding: 1.5rem 1.5rem;
-    /*Voir après si h1 et i en display inline block ça passe*/
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background: $light-gray;
@@ -25,16 +24,12 @@
             margin: 1.5rem 0;
             font-size: 2rem;
             font-family: 'Shrikhand';
-            // font-weight: bolder;
-            // font-style: italic;
-            // letter-spacing: -5px;
         }
 
         i {
             font-size: 2rem;
         }
     }
-
 }
 
 .grid-container {
@@ -55,6 +50,4 @@
         border-bottom: 3px solid $tertiary-color;
         width: 40px
     }
-
-
 }
