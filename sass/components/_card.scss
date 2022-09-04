@@ -6,7 +6,7 @@
     width: 100%;
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: $shadow;
     overflow: hidden;
     background: $wt;
     grid-template-columns: 1fr 1fr 50px;
@@ -18,7 +18,7 @@
         "location location icon";
 
     &:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: $more-shadow
     }
 
     .new {
@@ -79,8 +79,8 @@
 
     @media screen and (min-width: 992px) {
         margin: 1rem auto;
-        height: 300px;
-        width: 80%;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -94,20 +94,20 @@
     width: 100%;
     opacity: 0;
     overflow: hidden;
-
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: $shadow;
 
 
     &:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: $more-shadow;
     }
+
 
 
     .grid-selection {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr auto;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "name name"
             "details price";
@@ -145,6 +145,8 @@
             font-size: 0.8rem;
             font-weight: bold;
         }
+
+
     }
 
 }

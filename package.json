@@ -4,7 +4,7 @@
   "description": "P3 Projet Dynamisez une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
   },
   "author": "Jessy Marion",
   "license": "ISC"

@@ -1,0 +1,17 @@
+.loader {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: $color-gradient;
+    @include cent-col;
+    animation: fade-off 2.2s forwards;
+    z-index: 1;
+}
+
+
+.load-icon {
+    color: #101010;
+    font-size: 18vw;
+    animation: bounce 1.6s 0.4s infinite;
+    animation-timing-function: cubic-bezier(.28, .84, .42, 1);
+}
